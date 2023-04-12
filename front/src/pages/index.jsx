@@ -20,17 +20,16 @@ const index = () => {
                     minWidth: "100%",
                     minHeight: "100%",
                 }}>
-                <Stack direction={"column"}>
-                    <Stack direction={"row"}>
-                        <ParameterBox title={"temperatura"} value={17} />
-                        <ParameterBox title={"temperatura"} value={17} />
-                        <ParameterBox title={"temperatura"} value={17} />
+                <Stack direction={"column"} sx={{ flexGrow: 1 }}>
+                    <Stack direction={"row"} display={"flex"} sx={{ flexGrow: 1 }}>
+                        <ParameterBox title={"temperatura"} value={17} sx={{ display: "flex", flexGrow: 1 }} />
+                        <ParameterBox title={"temperatura"} value={17} sx={{ flexGrow: 1 }} />
+                        <ParameterBox title={"temperatura"} value={17} sx={{ flexGrow: 1 }} />
                     </Stack>
-                    <Stack direction={"row"}>
-                        <ParameterBox title={"temperatura"} value={17} />
-                        <ParameterBox title={"temperatura"} value={17} />
-                        <ParameterBox title={"temperatura"} value={17} />
-
+                    <Stack direction={"row"} display={"flex"} sx={{ flexGrow: 1 }}>
+                        <ParameterBox title={"temperatura"} value={17} display={"flex"} sx={{ flexGrow: 1 }} />
+                        <ParameterBox title={"temperatura"} value={17} display={"flex"} sx={{ flexGrow: 1 }} />
+                        <ParameterBox title={"temperatura"} value={17} display={"flex"} sx={{ flexGrow: 1 }} />
                     </Stack>
                 </Stack>
             </Box>
