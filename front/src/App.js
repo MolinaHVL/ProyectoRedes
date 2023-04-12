@@ -1,8 +1,9 @@
 import './App.css';
+import Index from './pages/index';
 
 function App() {
   return (
-    <h1>hi x2</h1>
+    <Index />
   );
 }
 
