@@ -18,9 +18,9 @@ const Index = () => {
         setAllProducts(products);
     };
 
-    if (allProducts.length === 0) {
-        return <div>Loading...</div>;
-    }
+    // if (allProducts.length === 0) {
+    //     return <div>Loading...</div>;
+    // }
 
     return (
         <Box
@@ -42,7 +42,7 @@ const Index = () => {
             >
                 <Stack direction={"column"} sx={{ flexGrow: 1 }}>
                     <Stack direction={"row"} display={"flex"} sx={{ flexGrow: 1 }}>
-                        <ParameterBox title={"temperatura"} value={allProducts[allProducts.length - 1].temperature} />
+                        {/* <ParameterBox title={"temperatura"} value={allProducts[allProducts.length - 1].temperature} /> */}
                         <ParameterBox title={"temperatura"} value={17} />
                         <ParameterBox title={"temperatura"} value={17} />
                     </Stack>
